@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function Header() {
-  const [count, setCount] = useState(0)
+  const [] = useState(0)
 
 // Return => Funk. Reaktiven HTML Code generieren der asynchron auf Events reagiert
   return (
