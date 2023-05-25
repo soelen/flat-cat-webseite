@@ -9,8 +9,7 @@ function App() {
 
 // Return => Funk. Reaktiven HTML Code generieren der asynchron auf Events reagiert
   return (
- <Header></Header>
-
-  )}
+ <Header title="Affe"></Header>
+)}
 
 export default App

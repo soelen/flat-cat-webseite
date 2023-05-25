@@ -1,6 +1,10 @@
 import { useState } from 'react'
 
-function Header() {
+type HeaderProps  = {
+    title: string;
+   }
+
+function Header(props:HeaderProps) {
   const [] = useState(0)
 
 // Return => Funk. Reaktiven HTML Code generieren der asynchron auf Events reagiert
@@ -8,7 +12,7 @@ function Header() {
 <nav className="navbar" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
     <a className="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"/>
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" title={props.title}/>
     </a>
 
     <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
