@@ -1,7 +1,7 @@
 import { useState } from 'react'
-
 import './App.css'
 //import 'bulma/css/bulma.min.css'
+import SkillBars from './components/SkillBars'
 import Header from './components/Header'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
 // Return => Funk. Reaktiven HTML Code generieren der asynchron auf Events reagiert
   return (
- <Header title="Affe"></Header>
+ <div><Header title="Affe"></Header><SkillBars></SkillBars></div>
 )}
 
 export default App
