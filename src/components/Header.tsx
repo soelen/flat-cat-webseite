@@ -5,13 +5,12 @@ type HeaderProps  = {
    }
 
 function Header(props:HeaderProps) {
-  const [] = useState(0)
 
 // Return => Funk. Reaktiven HTML Code generieren der asynchron auf Events reagiert
   return (
 <nav className="navbar" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
-    <a className="navbar-item" href="https://bulma.io">
+    <a className="navbar-item" href="https://flatcat.netlify.app/">
       <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png"/>
     </a>
 
@@ -24,46 +23,29 @@ function Header(props:HeaderProps) {
 
   <div id="navbarBasicExample" className="navbar-menu">
     <div className="navbar-start">
+
       <a className="navbar-item">
-        Home
+        Resume
       </a>
 
       <a className="navbar-item">
-        Documentation
+        Contact
       </a>
-
       <div className="navbar-item has-dropdown is-hoverable">
         <a className="navbar-link">
-          LOL
+          More
         </a>
 
         <div className="navbar-dropdown">
           <a className="navbar-item">
             About
           </a>
-          <a className="navbar-item">
-            Jobs
-          </a>
-          <a className="navbar-item">
-            Contact
-          </a>
+
           <hr className="navbar-divider"/>
           <a className="navbar-item">
             Report an issue
           </a>
-        </div>
-      </div>
-    </div>
 
-    <div className="navbar-end">
-      <div className="navbar-item">
-        <div className="buttons">
-          <a className="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a className="button is-light">
-            Log in
-          </a>
         </div>
       </div>
     </div>
