@@ -1,19 +1,36 @@
-import './App.css'
+import './App.scss'
 import SkillBar from './components/SkillBar/SkillBar'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route }
+  from "react-router-dom";
+
+import "./App.scss";
+import Home from './pages/Home.tsx'
+import Resume from "./pages/Resume";
+import ArtGallery from "./pages/ArtGallery.tsx";
 
 function App() {
+// App ist dafür da wie App allg. Definiert. Und seitenstruktur festzulegen 
 
-// Skillbars
+//=> BrowserRouter: ReactKomp. Die React sagt wo der User gerade ist
   return (
-    <div>
-      <Header title="Affe"></Header>
-      <h1 className="SkillBar"> My Skills </h1>
-      <SkillBar title="HTML & CSS " value={31}></SkillBar>
-      <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
-      <SkillBar title="React" value={18}></SkillBar>
-      <SkillBar title="Java Spring Boot" value={12}></SkillBar>
-    </div>
+    <Router>
+    <Navbar title="Navbar"></Navbar> 
+
+      <Routes>
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/artgallery" element={<ArtGallery />} />
+      </Routes>
+    </Router>
+
+
   )
 }
 // Return => Funktion. Generiere reaktiven HTML Code, der synchron auf Events reagiert.

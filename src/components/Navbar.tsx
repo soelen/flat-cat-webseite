@@ -1,16 +1,14 @@
-import { useState } from 'react'
-
-type HeaderProps  = {
+type navbarProps  = {
     title: string;
    }
 
-function Header(props:HeaderProps) {
+function Navbar(props:navbarProps) {
 
 // Return => Funk. Reaktiven HTML Code generieren der asynchron auf Events reagiert
   return (
 <nav className="navbar" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
-    <a className="navbar-item" href="https://flatcat.netlify.app/">
+    <a className="navbar-item" href="/">
       <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png"/>
     </a>
 
@@ -24,8 +22,12 @@ function Header(props:HeaderProps) {
   <div id="navbarBasicExample" className="navbar-menu">
     <div className="navbar-start">
 
-      <a className="navbar-item">
+      <a className="navbar-item" href="/resume">
         Resume
+      </a>  
+
+      <a className="navbar-item" href="/artgallery">
+        ArtGallery
       </a>
 
       <a className="navbar-item">
@@ -54,4 +56,4 @@ function Header(props:HeaderProps) {
   )
 }
 
-export default Header
+export default Navbar
