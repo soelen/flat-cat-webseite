@@ -1,11 +1,12 @@
 import './App.scss'
-import SkillBar from './components/SkillBar/SkillBar'
+
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route }
   from "react-router-dom";
 
 import "./App.scss";
-import Home from './pages/Home.tsx'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
 import Resume from "./pages/Resume";
 import ArtGallery from "./pages/ArtGallery.tsx";
 
@@ -28,6 +29,11 @@ function App() {
       <Routes>
         <Route path="/artgallery" element={<ArtGallery />} />
       </Routes>
+
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
     </Router>
 
 

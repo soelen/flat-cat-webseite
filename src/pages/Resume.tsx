@@ -6,11 +6,13 @@ function Resume() {
   // Skillbars
   return (
     <div>
-      <h1 className="SkillBar">My Skills</h1>
+<h1 className="title">My Skills</h1>
+<h2 className="subtitle">Im Pro in every single point! </h2>
       <SkillBar title="HTML & CSS " value={43}></SkillBar>
       <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
-      <SkillBar title="React" value={100}></SkillBar>
-      <SkillBar title="Java Spring Boot" value={100}></SkillBar>
+      <SkillBar title="React" value={39}></SkillBar>
+      <SkillBar title="Java Spring Boot" value={100}> <div>Hi </div></SkillBar>
+      {/* Childern sind eig. Slots.  */}
     </div>
   )
 }

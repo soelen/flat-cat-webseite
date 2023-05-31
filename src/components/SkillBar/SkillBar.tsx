@@ -4,19 +4,22 @@ import "./SkillBar.scss"
 type SkillBarProps  = {
    title: string;
    value: number; 
+   children?: JSX.Element;
   }
 
 function SkillBar (props:SkillBarProps)  {
+
    return (
     <div className="container">
 
 {/* Skillbars */}
          <div className="skill-box">
             <span className='title'>{props.title}</span>
+            {props.children}
             <div className='skill-bar'>
-               {/*Ändere den schwarzen Balken*/}
+{/*Ändere den schwarzen Balken*/}
                <span className='skill-per' style={{width: `${props.value}%`}}>
-               {/* Erste Klammer = Achtung React! Hier kommt etwas Dynamisches. 2.Klammer: Obj. */}
+{/* Erste Klammer = Achtung React! Hier kommt etwas Dynamisches. 2.Klammer: Obj. */}
                   <span className='tooltip'>{props.value}%</span>
                </span>
             </div>
