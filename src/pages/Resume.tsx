@@ -11,7 +11,7 @@ function Resume() {
       <SkillBar title="HTML & CSS " value={43}></SkillBar>
       <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
       <SkillBar title="React" value={39}></SkillBar>
-      <SkillBar title="Java Spring Boot" value={100}> <div>Hi </div></SkillBar>
+      <SkillBar title="Java Spring Boot" value={100}><div>Hi</div></SkillBar>
       {/* Childern sind eig. Slots.  */}
     </div>
   )
