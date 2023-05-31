@@ -3,7 +3,7 @@ import "./SkillBar.scss"
 //Wiederverwendbare SkillBar
 type SkillBarProps  = {
    title: string;
-   value: number;
+   value: number; 
   }
 
 function SkillBar (props:SkillBarProps)  {
