@@ -1,6 +1,3 @@
-import { createPopper } from '@popperjs/core';
-import { usePopper } from 'react-popper';
-import React, { useState } from 'react';
 import './Home.scss'
 
 function Home() {
@@ -11,13 +8,13 @@ function Home() {
 
   <div>
     <figure className="image01">
-      <img id="homeimage01" src="./public/img/home/homePic01.png" title="title01"/>
+      <img id="homeimage01" src="/img/home/homePic01.png" title="title01"/>
     </figure>
   </div>
 
   <div>
     <figure className="image02">
-        <img id="homeimage02" src="./public/img/home/homePic02.png" title="title02"/>
+        <img id="homeimage02" src="/img/home/homePic02.png" title="title02"/>
     </figure>
   </div>
 
