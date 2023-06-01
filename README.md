@@ -4,6 +4,8 @@ installieren von
 starten des projekts
 3. öffne die webseite
 
-4.
+Netlify: 
+1. npm run Build
 
-evtl probleme bei neuen dateien. windoof erkennt dies nicht sofort. (kleinschreibung)
+5. npm install react-tooltip --safe -dev
+tooltip: Zeigt einen Text, wenn du über ein Bild mit der Maus bist.

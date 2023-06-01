@@ -22,7 +22,7 @@ function ArtGallery() {
     <div className="gallery-item" key={index}>
 
       <figure>
-        <img src={`./public/img/artgallery/${item.src}`}/>
+        <img src={`./img/artgallery/${item.src}`}/>
         <figcaption>{item.caption}</figcaption>
       </figure>
 
