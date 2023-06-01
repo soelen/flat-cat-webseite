@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Resume from "./pages/Resume";
 import ArtGallery from "./pages/ArtGallery.tsx";
+import 'react-tooltip/dist/react-tooltip.css'
 
 function App() {
 // App ist dafür da wie App allg. Definiert. Und seitenstruktur festzulegen 
@@ -19,19 +20,19 @@ function App() {
     <Navbar title="Navbar"></Navbar> 
 
       <Routes>
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/resume" element={<Resume/>}/>
       </Routes>
       
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>}/>
       </Routes>
 
       <Routes>
-        <Route path="/artgallery" element={<ArtGallery />} />
+        <Route path="/artgallery" element={<ArtGallery/>}/>
       </Routes>
 
       <Routes>
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
 
     </Router>
