@@ -5,9 +5,9 @@ function Resume() {
 
   // Skillbars
   return (
-    <div>
-<h1 className="title">My Skills</h1>
-<h2 className="subtitle">Im Pro in every single point! </h2>
+    <div className="container">
+<h1 className="title has-text-black">My Skills</h1>
+
       <SkillBar title="HTML & CSS " value={43}></SkillBar>
       <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
       <SkillBar title="React" value={39}></SkillBar>

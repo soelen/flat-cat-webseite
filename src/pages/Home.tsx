@@ -3,23 +3,19 @@ import './Home.scss'
 function Home() {
 
 // HomePictures
-  return (
-<div className="HomePics">
+return (
+  <div className="columns">
 
-  <div>
-    <figure className="image01">
-      <img id="homeimage01" src="/img/home/homePic01.png" title="title01"/>
-    </figure>
+    <div className="column">
+      <h1 className="title has-text-black is-spaced">Hello and Welcome!</h1>
+      <h6 className="subtitle has-text-black is-spaced">Hello and Welcome!</h6>
+    </div>
+
+    <div className="column ">
+      <figure className="image01">
+        <img id="homeimage01" src="/img/home/homepic.png" title="title01"/>
+      </figure>
+    </div>
   </div>
-
-  <div>
-    <figure className="image02">
-        <img id="homeimage02" src="/img/home/homePic02.png" title="title02"/>
-    </figure>
-  </div>
-
-</div>
-  )
-}
-
+  )}
 export default Home

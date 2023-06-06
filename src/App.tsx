@@ -14,8 +14,10 @@ import 'react-tooltip/dist/react-tooltip.css'
 function App() {
 // App ist dafür da wie App allg. Definiert. Und seitenstruktur festzulegen 
 
-//=> BrowserRouter: ReactKomp. Die React sagt wo der User gerade ist
+// import HtmlWebpackPlugin from 'html-webpack-plugin';
+
   return (
+
     <Router>
     <Navbar title="Navbar"></Navbar> 
 

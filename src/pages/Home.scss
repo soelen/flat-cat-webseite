@@ -1,13 +1,14 @@
-.HomePics {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Home {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh; 
   }
-  .image01 {
-    margin: 0;
+  .homeimage01 {
+    width: 10px; /* Breite des Bildes */
+    height: auto;
+    margin-right: auto;
   }
-  .image02 {
-    margin: 0;
-  }
+
 
  

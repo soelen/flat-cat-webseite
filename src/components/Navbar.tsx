@@ -11,7 +11,7 @@ function Navbar(_props: navbarProps) {
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="/">
-          <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png" />
+        <img src="/img/icon.png" title="title02"/>
         </a>
 
         <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

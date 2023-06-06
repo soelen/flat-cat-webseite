@@ -4,8 +4,7 @@ function ArtGallery() {
   return (
 <div className="gallery mt-6">
 
-  <h1 className="title">Art Gallery</h1>
-<h2 className="subtitle">Hier finden sie meine Kunst, die von fragwürtiger Natur ist... 🫢</h2>
+  <h1 className="title has-text-black">Art Gallery</h1>
   {[
     { src: 'example01.jpg', caption: 'Text im Bild' },
     { src: 'example02.jpg', caption: 'Text im Bild' },

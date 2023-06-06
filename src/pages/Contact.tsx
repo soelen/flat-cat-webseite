@@ -17,7 +17,7 @@ function Contact() {
 <div className= "Page-Contact">
 
   <div className="container my-5 mt-5 mx-5 px-5">
-    <h2 className="title is-2 is-capitalized">Contact Me!</h2>
+    <h2 className="title is-2 is-capitalized has-text-black">Contact Me!</h2>
     {/* <form action="" method="get"> */}
     <form onSubmit={emailSubmit}>
         <div className="field">
