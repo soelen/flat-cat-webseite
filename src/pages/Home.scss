@@ -1,20 +1,32 @@
+@use '../colors.scss';
+
 .Home {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100vh; 
-  }
-  .homeimage01 {
-    width: 10px; /* Breite des Bildes */
-    height: auto;
-    margin-right: auto;
-  }
+  // display: flex;
+  // justify-content: flex-end;
+  // align-items: center;
+  // height: 100vh;
+}
+.Home .introduction {
+  background: darkgrey;
+}
+.Home h1 {
+  font-size: 48px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(0deg, colors.$flatcat-milky-background, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
+}
 
-  // .textColumn {
-  // padding: 3000px;
-  // }
+.Home .homeimage01 {
+  width: 10px; /* Breite des Bildes */
+  height: auto;
+  margin-right: auto;
+}
 
-  // .picColumn {
- 
-  // }
+.Home .textColumn {
+}
+
+// .picColumn {
+
+// }

@@ -1,4 +1,12 @@
-$primary: rgb(192, 255, 220);
+@use './colors.scss';
+// Titles
+
+$title-color: white;
+$subtitle-color: white;
+$background: pink;
+
+$primary: colors.$flatcat-primary;
+$link: colors.$flatcat-secondary;
 $navbar-background-color: grey;
 $gap: 32px;
 
