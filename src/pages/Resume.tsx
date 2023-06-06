@@ -6,6 +6,11 @@ function Resume() {
   // Skillbars
   return (
     <div className="container">
+
+<figure className="displayResumee">
+        <embed id="resumee" src="/Resumee/resumee.pdf" type="application/pdf" width="100%" height="600px"  title="resumeeTitle"/>
+</figure>
+
 <h1 className="title has-text-black">My Skills</h1>
 
       <SkillBar title="HTML & CSS " value={43}></SkillBar>
