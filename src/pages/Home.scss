@@ -1,32 +1,30 @@
 @use '../colors.scss';
 
 .Home {
-  // display: flex;
-  // justify-content: flex-end;
-  // align-items: center;
-  // height: 100vh;
+  background: colors.$flatcat-primary-light;
 }
 .Home .introduction {
   background: darkgrey;
 }
+//Überschrift
 .Home h1 {
   font-size: 48px;
   font-weight: 800;
-  background: -webkit-linear-gradient(0deg, colors.$flatcat-milky-background, #00ff95 80%);
+  background: -webkit-linear-gradient(0deg, colors.$flatcat-primary-dark, colors.$flatcat-secondary-dark 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
-
+//Knopf1
+.Home .introduction .buttonMySkills {
+  background: colors.$flatcat-primary-dark;
+}
+//Knopf2
+.Home .introduction .buttonGithub {
+  background:colors.$flatcat-secondary-dark;
+}
+//Bild
 .Home .homeimage01 {
   width: 10px; /* Breite des Bildes */
   height: auto;
   margin-right: auto;
 }
-
-.Home .textColumn {
-}
-
-// .picColumn {
-
-// }

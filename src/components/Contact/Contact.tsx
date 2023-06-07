@@ -42,7 +42,7 @@ function Contact() {
             <label htmlFor="message" className="label is-size-4 has-text-weight-light"></label>
             <textarea name="message" id="message" className="textarea is-medium is-primary" placeholder="Message"></textarea>
         </div>
-        <button type="submit" className="button is-primary is-size-5">Submit</button>
+        <button type="submit" className="buttonis-size-5">Submit</button>
     </form>
   </div>
 </div>

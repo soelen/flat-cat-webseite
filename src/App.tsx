@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route }
 
 import "./App.scss";
 import Home from './pages/Home'
-import Contact from './pages/Contact'
+import Contact from './components/Contact/Contact'
 import Resume from "./pages/Resume";
 import ArtGallery from "./pages/ArtGallery.tsx";
 import 'react-tooltip/dist/react-tooltip.css'
