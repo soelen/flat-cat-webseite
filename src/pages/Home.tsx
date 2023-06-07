@@ -7,12 +7,13 @@ function Home() {
 
   return (
     <div className="Home">
-      <section className="introduction">
+      <section className="introduction py-6">
         <div className="container">
           <div className="columns my-0">
             <div className="column is-7 textColumn">
               <div className="mt-5">Me is: Developer and Artist</div>
               <h1>Hi! Nice to see you here!</h1>
+              <h1>Example</h1>
               <button className="button buttonMySkills is-medium is-primary mr-5">My skills</button>
               <button className="button buttonGithub is-medium is-link">Github</button>
             </div>
@@ -24,24 +25,30 @@ function Home() {
         </div>
       </section>
 
-{/*___Skillbars___*/}
-<div className="container ">
-      <div className="column is-7 textColumn ">
-        <h1 className="title has-text-black">My Skills</h1>
+      {/*___Skillbars___*/}
+      <section>
+        <div className="container py-6">
 
-        <SkillBar title="HTML & CSS " value={43}></SkillBar>
-        <SkillBar title="Bulma " value={46}></SkillBar>
-        <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
-        <SkillBar title="React" value={41}></SkillBar>
-        <SkillBar title="Java Spring Boot" value={29}></SkillBar>
+          <div className="column textColumn ">
+            <h1 className="title has-text-black">My Skills</h1>
 
-    </div>
-  </div>
-{/*___Contact_Fomular___*/}
-      <section className="contactFomular">
-        <Contact></Contact>
+            <SkillBar title="HTML & CSS " value={43}></SkillBar>
+            <SkillBar title="Bulma " value={46}></SkillBar>
+            <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
+            <SkillBar title="React" value={41}></SkillBar>
+            <SkillBar title="Java Spring Boot" value={29}></SkillBar>
+
+          </div>
+        </div>
       </section>
-</div>
+
+      {/*___Contact_Fomular___*/}
+      <section className="contactForm py-6">
+        <div className="container">
+          <Contact></Contact>
+        </div>
+      </section>
+    </div>
   );
 }
 export default Home;

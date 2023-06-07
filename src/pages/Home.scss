@@ -4,7 +4,7 @@
   background: colors.$flatcat-primary-light;
 }
 .Home .introduction {
-  background: darkgrey;
+  background: colors.$flatcat-milky-background;
 }
 //Überschrift
 .Home h1 {
@@ -27,4 +27,8 @@
   width: 10px; /* Breite des Bildes */
   height: auto;
   margin-right: auto;
+}
+
+.contactForm {
+  background:colors.$flatcat-milky-background;
 }
