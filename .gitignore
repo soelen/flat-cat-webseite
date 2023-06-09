@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+
+not-really-public-images-lol
+
 # Editor directories and files
 .private.artgallery*
 .vscode/*
