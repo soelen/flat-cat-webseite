@@ -1,16 +1,45 @@
 @use '../colors.scss';
+@use '../spacings.scss';
 
 .Home {
   background: colors.$flatcat-primary-light;
 }
-.Home .introduction {
-  background: colors.$flatcat-milky-background;
+.Home .home-introduction {
+  background: #242329;
+  padding: spacings.$largest;
 }
-//Überschrift
+.Home .home-introduction path {
+  fill: pink;
+
+  // fill: colors.$flatcat-secondary-darkest;
+}
+.Home .home-introduction path:hover {
+  transform: rotate(360deg);
+  transform-origin: 80% 70%;
+  transition: all 5s ease;
+
+}
+
+.Home .home-lead {
+  // color: white;
+}
+
+.Home .home-skills {
+  background: colors.$flatcat-primary;
+  padding: spacings.$largest;
+  
+}
+
+.Home .home-contact {
+  background: #d6d8ce;
+  padding: spacings.$largest;
+  
+}
+
 .Home h1 {
   font-size: 48px;
   font-weight: 800;
-  background: -webkit-linear-gradient(0deg, colors.$flatcat-primary-dark, colors.$flatcat-secondary-dark 80%);
+  background: linear-gradient(90deg, colors.$flatcat-primary, colors.$flatcat-primary-dark);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

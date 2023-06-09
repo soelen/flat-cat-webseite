@@ -15,16 +15,16 @@ function Contact() {
     window.location.replace(`mailto:example@example.me?subject=${name.value}&body=${message.value}`) 
   }
   return (
-<div className= "Page-Contact">
+<div className="Page-Contact">
 
+  <div className="">
     <h2 className="title is-2 is-capitalized has-text-black">Contact Me!</h2>
     {/* <form action="" method="get"> */}
     <form onSubmit={emailSubmit}>
         <div className="field">
             <label htmlFor="name" className="label is-size-4 has-text-weight-light"></label>
-            <div className="control ">
-                <input type="text" name="name" id="name" className="input is-primary" placeholder="Name" autoFocus />
-
+            <div className="control">
+              <input type="text" name="name" id="name" className="input is-primary" placeholder="Name" />
             </div>
         </div>
         <div className="field">
@@ -40,6 +40,7 @@ function Contact() {
         </div>
         <button type="submit" className="button is-size-5">Submit</button>
     </form>
+  </div>
   </div>
 
   );

@@ -1,49 +1,62 @@
+import { ReactComponent as Logo } from "../../public/favicon.svg";
 import "./Home.scss";
 import './Resume.scss'
 import SkillBar from '../components/SkillBar/SkillBar'
 import Contact from '../components/Contact/Contact'
 
 function Home() {
-
+  const onContact = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+  // HomePictures
   return (
     <div className="Home">
-      <section className="introduction py-6">
+      <section className="home-introduction">
         <div className="container">
           <div className="columns my-0">
             <div className="column is-7 textColumn">
-              <div className="mt-5">Me is: Developer and Artist</div>
-              <h1>Hi! Nice to see you here!</h1>
-              <h1>Example Webside</h1>
-              <button className="button buttonMySkills is-medium is-primary mr-5">My skills</button>
-              <a href="https://github.com/Flat-Cat" target="_blank" rel="noopener noreferrer" className="button buttonGithub is-medium is-link">Github</a>
+              <div className="mt-5 home-lead">
+                FlatCat: Developer and Artist
+              </div>
+              <h1>
+                Hi! My Name is Jenni!
+                <br />
+                Nice to meet you!
+              </h1>
+              <button
+                className="button is-medium is-primary mr-5"
+                onClick={onContact}
+              >
+                Contact
+              </button>
+              <a
+                href="https://github.com/Flat-Cat/webseite"
+                target="_blank"
+                className="button is-medium is-link"
+              >
+                GitHub
+              </a>
             </div>
 
+            <div className="column is-2 py-0"></div>
             <div className="column is-3 py-0 picColumn">
-              <img className="is-block" id="homeimage01" src="/img/home/homepic.png" title="title01" />
+              <Logo></Logo>
             </div>
           </div>
         </div>
       </section>
-
-      {/*___Skillbars___*/}
-      <section>
-        <div className="container py-6">
-
-          <div className="column textColumn ">
-            <h1 className="title has-text-black">My Skills</h1>
-
-            <SkillBar title="HTML & CSS " value={43}></SkillBar>
-            <SkillBar title="Bulma " value={46}></SkillBar>
-            <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
-            <SkillBar title="React" value={41}></SkillBar>
-            <SkillBar title="Java Spring Boot" value={29}></SkillBar>
-
-          </div>
+      <section className="home-skills">
+        <div className="container">
+          <h2>Skills</h2>
+          <SkillBar title="HTML & CSS " value={43}></SkillBar>
+          <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
+          <SkillBar title="React" value={39}></SkillBar>
+          <SkillBar title="Java Spring Boot" value={100}></SkillBar>
+          <div>Wanna know more what else I can do?</div>
+          <button className="button is-medium is-white mr-5">Resume</button>
         </div>
       </section>
-
-      {/*___Contact_Fomular___*/}
-      <section className="contactForm py-6">
+      <section className="home-contact">
         <div className="container">
           <Contact></Contact>
         </div>

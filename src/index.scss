@@ -1,3 +1,8 @@
 @charset "utf-8";
 @import "./bulma-variables.scss";
 @import "../node_modules/bulma/bulma.sass";
+
+// https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+html{
+    scroll-behavior:smooth
+}

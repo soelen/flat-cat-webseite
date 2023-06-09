@@ -23,17 +23,10 @@ function App() {
 
       <Routes>
         <Route path="/resume" element={<Resume/>}/>
-      </Routes>
-      
-      <Routes>
         <Route path="/" element={<Home/>}/>
-      </Routes>
 
-      <Routes>
         <Route path="/artgallery" element={<ArtGallery/>}/>
-      </Routes>
 
-      <Routes>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
 

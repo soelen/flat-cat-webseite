@@ -6,10 +6,13 @@ function ArtGallery() {
 
   <h1 className="title has-text-black">Art Gallery</h1>
   {[
-    { src: 'bild01.png', caption: 'Nyam' },
-    { src: 'bild02.png', caption: 'Astra-ur, mein Freund' },
-    { src: 'bild03.png', caption: 'Van-gogh-mood' },
-    { src: 'bild10.png', caption: 'Far away' },
+    { src: 'https://picsum.photos/seed/1/200/300', caption: 'Text im Bild' },
+    { src: 'https://picsum.photos/seed/2/300/300', caption: 'Text im Bild' },
+    { src: 'https://picsum.photos/seed/3/200/200', caption: 'Text im Bild' },
+    { src: 'https://picsum.photos/seed/4/200/300', caption: 'Text im Bild' },
+    { src: 'https://picsum.photos/seed/5/200/200', caption: 'Text im Bild' },
+    { src: 'https://picsum.photos/seed/6/200/300', caption: 'Text im Bild' },
+    { src: 'https://picsum.photos/seed/7/200/300', caption: 'Text im Bild' },
 
     { src: 'bild06.png', caption: 'Dreamy.Mode=on' },
     { src: 'bild07.png', caption: 'UglyUs' },
@@ -27,7 +30,7 @@ function ArtGallery() {
     <div className="gallery-item" key={index}>
 
       <figure>
-        <img src={`./private/artgallery/${item.src}`}/>
+        <img src={`${item.src}`}/>
         <figcaption>{item.caption}</figcaption>
       </figure>
 

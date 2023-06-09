@@ -9,8 +9,14 @@ $title-color: black;
 
 $primary: colors.$flatcat-primary;
 $link: colors.$flatcat-secondary;
-$navbar-background-color: colors.$flatcat-secondary-darker;
-$navbar-item-color:  rgb(255, 255, 255);
+
+
+
+// Navbar
+
+$navbar-background-color: colors.$flatcat-secondary-dark;
+$navbar-item-color: white;
+
 $gap: 32px;
 
 $fullhd: 1200px + (2 * $gap)
