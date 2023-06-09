@@ -1,4 +1,6 @@
+import SkillBar from "../components/SkillBar/SkillBar";
 import { ReactComponent as Logo } from "../../public/favicon.svg";
+import Contact from "./Contact";
 import "./Home.scss";
 import './Resume.scss'
 import SkillBar from '../components/SkillBar/SkillBar'
