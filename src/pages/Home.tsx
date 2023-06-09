@@ -13,9 +13,9 @@ function Home() {
             <div className="column is-7 textColumn">
               <div className="mt-5">Me is: Developer and Artist</div>
               <h1>Hi! Nice to see you here!</h1>
-              <h1>Example</h1>
+              <h1>Example Webside</h1>
               <button className="button buttonMySkills is-medium is-primary mr-5">My skills</button>
-              <button className="button buttonGithub is-medium is-link">Github</button>
+              <a href="https://github.com/Flat-Cat" target="_blank" rel="noopener noreferrer" className="button buttonGithub is-medium is-link">Github</a>
             </div>
 
             <div className="column is-3 py-0 picColumn">

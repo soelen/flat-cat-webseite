@@ -5,19 +5,57 @@ function Resume() {
 
   // Skillbars
   return (
-    <div className="container">
+<div className="Home">
+      <section className="introduction py-6">
+        <div className="container">
+          <div className="columns my-0">
+            <div className="column is-7 textColumn">
 
-<h1 className="title has-text-black">My Skills</h1>
 
-      <SkillBar title="HTML & CSS " value={43}></SkillBar>
-      <SkillBar title="Bulma " value={46}></SkillBar>
-      <SkillBar title="Javascript & Typescript " value={35}></SkillBar>
-      <SkillBar title="React" value={41}></SkillBar>
-      <SkillBar title="Java Spring Boot" value={29}><div>Hi</div></SkillBar>
-      {/* Childern sind eig. Slots.  */}
+<div className="columns">
+  <div className="column is-one-third">
+    <h4 className="title is-4 pb-5">Trainings</h4>
+      <h4 className="subtitle is-4">2020-2023</h4>
+      <h4 className="subtitle is-4">2009-2013</h4>
+
+<h4 className="title is-4 pb-5 pt-5">Vocational stations</h4>
+      <h4 className="subtitle is-4">2020-2023</h4>
+      <h4 className="subtitle is-4">2020-2023</h4>
+      <h4 className="subtitle is-4">2020-2023</h4>
+      
+      
+  </div>
+    <div className="column">
+
+      <h5 className="subtitle is-5">
+    Umschulung zum Fachinformatikerin in Anwendungsentwicklung
+    Comcave, Ludwigshafen
+      </h5>
+    <p className="mb-4"> 
+    Comcave, Ludwigshafen
+    </p>
+
+
+    <h5 className="subtitle is-5 mt-2">
+    Staatliche Anerkennung zur Kinderpflegerin
+    Erwerb der Mittleren Reife
+    </h5>
+    <p className="mt-1">
+
+    Zinzendorfschule Königsfeld
+    </p>
+  
+  
+  </div>
+</div>
+
+     
+
+          </div>
+        </div>
     </div>
-  )
-}
-// Return => Funktion. Generiere reaktiven HTML Code, der synchron auf Events reagiert.
+  </section>
+</div>
 
+)}
 export default Resume
